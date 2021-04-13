@@ -13,12 +13,15 @@ function selectmode()
         for(j = 0; j < data[0].length; j++){
             cell=rows[i].insertCell(-1);
             cell.appendChild(document.createTextNode(data[i][j]));
+            
             // 背景色の設定
             if(i==0){
                 cell.style.backgroundColor = "#bbb"; // ヘッダ行
-            }else{
+            }
+            else{
                 cell.style.backgroundColor = "#ddd"; // ヘッダ行以外
             }
         }
     }
+    document.getElementById(tableId).appendChild(table);
 }
