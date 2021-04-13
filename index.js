@@ -1,4 +1,4 @@
-function selectmode()
+function selectmodea()
 {
     var id = document.getElementById("selectmode");
     var table = document.getElementById("table");
@@ -24,4 +24,15 @@ function selectmode()
         }
     }
     document.getElementById(tableId).appendChild(table);
+}
+
+function selectmode(this)
+{
+    var box = document.getElementById("textbox");
+    box.value = "a";
+
+}
+
+function test(){
+    alert("test");
 }
