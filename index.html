@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,14 @@
 </head>
 <body>
   Mode:
-  <select name="modeselect" onchange="setectmode()">
+  <select name="mode" id="mode" onchange="selectmode(this)">
   <option value="01">01</option>
   <option value="cricket">Cricket</option>
   <option value="countup">Count Up</option>
   </select>
-  <div id="table></div>
+  <button type="button" onclick="test()">aaaa</button>
+  <input id="textbox"></input>
+  <div id="table"></div>
   <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
